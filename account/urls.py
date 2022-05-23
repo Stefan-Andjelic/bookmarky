@@ -8,11 +8,14 @@ urlpatterns = [
     # This path contains all Django auth (login/out, change/reset passwords) 
     path('', include('django.contrib.auth.urls')),
 
-    # Registering
+    # Register page
     path('register/', views.register, name='register'),
 
-    # Dashboard
+    # Dashboard page
     path('', views.dashboard, name='dashboard'),
+
+    # Profile edit page
+    path('edit/', views.edit, name='edit'),
 ]
 
 
